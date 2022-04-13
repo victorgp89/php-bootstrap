@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CodelyTv\\PhpBootstrap\\": "src/"
+            "Overwolf\\PhpBootstrap\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CodelyTv\\PhpBootstrapTest\\": "tests/"
+            "Overwolf\\PhpBootstrapTest\\": "tests/"
         }
     },
     "minimum-stability": "stable",
