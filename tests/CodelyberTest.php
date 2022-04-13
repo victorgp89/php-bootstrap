@@ -4,13 +4,13 @@ declare(strict_types = 1);
 
 namespace Overwolf\PhpBootstrapTest;
 
-use Overwolf\PhpBootstrap\Codelyber;
+use Overwolf\PhpBootstrap\Over;
 use PHPUnit\Framework\TestCase;
 
-final class OverwolfTest extends TestCase
+final class OverTest extends TestCase
 {
-    /** @var Overwolf */
-    private $codelyber;
+    /** @var Over */
+    private $over;
 
     /** @var string */
     private $greeting;
@@ -19,31 +19,31 @@ final class OverwolfTest extends TestCase
     {
         parent::tearDown();
 
-        $this->codelyber = null;
+        $this->over = null;
         $this->greeting = null;
     }
 
     /** @test */
     public function shouldSayHelloWhenGreeting()
     {
-        $this->givenACodelyber();
+        $this->givenAOver();
 
         $this->whenItGreets();
 
-        $this->thenItShouldSayCodelyTv();
+        $this->thenItShouldSayOver();
     }
 
-    private function givenACodelyber()
+    private function givenAOver()
     {
-        $this->codelyber = new Overwolf("Victor");
+        $this->over = new Over("Victor");
     }
 
     private function whenItGreets()
     {
-        $this->greeting = $this->codelyber->greet();
+        $this->greeting = $this->over->greet();
     }
 
-    private function thenItShouldSayCodelyTv()
+    private function thenItShouldSayOver()
     {
         $this->assertEquals("Overwolf", $this->greeting);
     }
