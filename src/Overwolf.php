@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace CodelyTv\PhpBootstrap;
+namespace Overwolf\PhpBootstrap;
 
-final class Codelyber
+final class Overwolf
 {
     /** string */
-    private const GREETING = "CodelyTV";
+    private const GREETING = "overwolf";
 
     /** @var string */
     private $name;

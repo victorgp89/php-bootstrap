@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace CodelyTv\PhpBootstrapTest;
+namespace Overwolf\PhpBootstrapTest;
 
-use CodelyTv\PhpBootstrap\Codelyber;
+use Overwolf\PhpBootstrap\Codelyber;
 use PHPUnit\Framework\TestCase;
 
-final class CodelyberTest extends TestCase
+final class OverwolfTest extends TestCase
 {
-    /** @var Codelyber */
+    /** @var Overwolf */
     private $codelyber;
 
     /** @var string */
@@ -35,7 +35,7 @@ final class CodelyberTest extends TestCase
 
     private function givenACodelyber()
     {
-        $this->codelyber = new Codelyber("Javi");
+        $this->codelyber = new Overwolf("Victor");
     }
 
     private function whenItGreets()
@@ -45,6 +45,6 @@ final class CodelyberTest extends TestCase
 
     private function thenItShouldSayCodelyTv()
     {
-        $this->assertEquals("CodelyTV", $this->greeting);
+        $this->assertEquals("Overwolf", $this->greeting);
     }
 }
