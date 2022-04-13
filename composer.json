@@ -38,6 +38,7 @@
             "Overwolf\\PhpBootstrapTest\\": "tests/"
         }
     },
+    "minimum-stability": "stable",
     "config": {
         "optimize-autoloader": true
     },
